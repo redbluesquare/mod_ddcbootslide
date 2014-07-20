@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>Bootstrap Slideshow</name>
+	<author>Darryl Usher</author>
+	<version>0.0.1</version>
+	<description>A Bootstrap Slideshow Module</description>
+	<files>
+		<filename>mod_ddcbootslide.xml</filename>
+		<filename module="mod_ddcbootslide">mod_ddcbootslide.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>js/script.js</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="Module class suffix" 
+					description="Please enter a module class suffix"
+				/>
+				<field
+					name="ddcbs_slide_select"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="Show Slide Selector"
+					description="Select YES if you want the sliders to show"
+					default="0">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="ddcbs_image_width" type="text" label="Max Image Width" 
+					description="Please enter the max image width"
+				/>
+			</fieldset>
+			<fieldset name="custom">
+				<field name="ddcbs_image_1" type="media" label="Image 1" 
+				description="Please select an image"
+				/>
+				<field name="ddcbs_image_1_caption_header" type="text" label="Image 1 Header Caption" 
+				description="Please enter the caption as optional"
+				/>
+				<field name="ddcbs_image_1_caption" type="textarea" label="Image 1 Caption" 
+				description="Please enter the caption as optional" cols="10" rows="5"
+				/>
+				<field name="ddcbs_image_2" type="media" label="Image 2" 
+				description="Please select an image"
+				/>
+				<field name="ddcbs_image_2_caption_header" type="text" label="Image 2 Header Caption" 
+				description="Please enter the caption as optional"
+				/>
+				<field name="ddcbs_image_2_caption" type="textarea" label="Image 2 Caption" 
+				description="Please enter the caption as optional" cols="10" rows="5"
+				/>
+				<field name="ddcbs_image_3" type="media" label="Image 3" 
+				description="Please select an image"
+				/>
+				<field name="ddcbs_image_3_caption_header" type="text" label="Image 3 Header Caption" 
+				description="Please enter the caption as optional"
+				/>
+				<field name="ddcbs_image_3_caption" type="textarea" label="Image 3 Caption" 
+				description="Please enter the caption as optional" cols="10" rows="5"
+				/>
+				<field name="ddcbs_image_4" type="media" label="Image 4" 
+				description="Please select an image"
+				/>
+				<field name="ddcbs_image_4_caption_header" type="text" label="Image 4 Header Caption" 
+				description="Please enter the caption as optional"
+				/>
+				<field name="ddcbs_image_4_caption" type="textarea" label="Image 4 Caption" 
+				description="Please enter the caption as optional" cols="10" rows="5"
+				/>
+				<field name="ddcbs_image_5" type="media" label="Image 5" 
+				description="Please select an image"
+				/>
+				<field name="ddcbs_image_5_caption_header" type="text" label="Image 5 Header Caption" 
+				description="Please enter the caption as optional"
+				/>
+				<field name="ddcbs_image_5_caption" type="textarea" label="Image 5 Caption" 
+				description="Please enter the caption as optional" cols="10" rows="5"
+				/>
+			</fieldset>
+		
+		</fields>
+	</config>
+</extension>
